@@ -15,13 +15,14 @@ var d = b**2 - 4*a*c
 d = Math.sqrt(d) //the the squared root
 console.log(d) 
 
+var x1 = (-1*b - d)/(2*a)
+var x2 = (-1*b + d)/(2*a)
+
 if (c < 0) {
-    var x1 = (-1*b + d)/(2*a)
-    var x2 = (-1*b - d)/(2*a)
-} else {
-    var x1 = (-1*b - d)/(2*a)
-    var x2 = (-1*b + d)/(2*a)    
+    x1 = (-1*b + d)/(2*a)
+    x2 = (-1*b - d)/(2*a)
 }
+
 console.log(x1)
 console.log(x2)
 
