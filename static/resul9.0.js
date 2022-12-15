@@ -81,7 +81,7 @@ function results() {
     let cSignalLabel = getSignalLabel(c)
 
     sa.innerHTML=(`a is ${aSignalLabel}, the graph has a <strong>concavity ${a > 0 ? `up`: `down`}</strong>`)
-    sb.innerHTML=(`b is ${bSignalLabel} and a is  ${aSignalLabel}, the vertex will be on quadrant ${quadrant} and the graph will cross the y axis <strong>${b > 0 ? `increasing`: `negadecreasingtive`}</strong>`)
+    sb.innerHTML=(`b is ${bSignalLabel} and a is  ${aSignalLabel}, the vertex will be on quadrant ${quadrant} and the graph will cross the y axis <strong>${b > 0 ? `increasing`: `decreasing`}</strong>`)
     sc.innerHTML=(`c is ${cSignalLabel}, the graph will cross the y axis <strong>${c > 0 ? `above`: `below`} </strong> the point 0`)
     xv.innerHTML=(`The value of Xv is <strong> ${Xv}</strong>`)
     yv.innerHTML=(`The value of Yv is <strong>${Yv}</strong>`)
