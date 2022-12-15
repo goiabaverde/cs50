@@ -1,0 +1,42 @@
+{% extends "base9.0.html" %}
+
+{% block title %}
+    Quadratic function calculator      
+{% endblock %}
+
+{% block body %}
+<header>
+    <nav>
+
+    </nav>
+</header>
+<main>
+   
+    <h1>Quadratic function calculator</h1>
+    <h2>Second degree equation</h2>
+    <p>The second degree equation is an equation that envolves a second degree trinomial, so  this is a equation with 3 terms and one of them has a element raised to 2 (thats is why the equation is called quadratic)</p>
+    <p><i>ax² + bx + c</i> is the base form, which a, b and c are constants and all of them are real numbers</p>
+    <h2>The nature and the parabolic form</h2>
+    <p>Thats a lot of things that the quadratic function can disbribed, one of the examples is a basketball shot</p>
+    <div id="basket"><img src="../static/imagens/basketball.png" alt="basketball shot"></div>
+    <h3>Type down below the values for a,b and constants of a quadratic function</h3>
+    <form action="/results" method="post" id="fo" >
+        <label for="a">Constant <strong>a</strong>:</label>
+        <input type="number" name="a" id="a"a autocomplete="off" autofocus a = "a" step="any">
+        <label for="b">Constant <strong>b</strong>:</label>
+        <input type="number" name="b" id="b" autocomplete="off" autofocus b = "b" step="any" class="clear">
+        <label for="c">Constant <strong>c</strong>:</label>
+        <input type="number" name="c" id="c" autocapitalize="off" autofocus b = "b" step="any" class="clear">
+        <input type="submit" value="Calculate" id="bo">
+    </form>
+    
+</main>
+<footer>
+
+</footer>
+<script src="../static/math12.0.js"></script>
+
+<!--'<img src="imagens/raiz negatica, a positivo, b negativo, c positivo.png" alt="graphic">''-->
+{% endblock %}
+
+

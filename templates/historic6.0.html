@@ -1,0 +1,38 @@
+{% extends "base9.0.html" %}
+
+{% block title %}
+        historic
+{% endblock %}
+
+{% block body %}
+        <main>
+        <div id="table">
+                <table class="content-table">
+                        <thead>
+                                <tr>
+                                        <th id="left">a</th>
+                                        <th>b</th>
+                                        <th>c</th>
+                                        <th id="right">Date</th>
+                                </tr>
+                        </thead>
+                
+                                <tbody>
+                                {% for row in history %}
+                                <tr>
+                                    <td>{{ row["a"] }}</td>
+                                    <td>{{ row["b"] }}</td>
+                                    <td>{{ row["c"] }}</td>
+                                    <td id="date">{{ row["date"] }}</td>
+                                </tr>
+                                </tbody>
+                                {% endfor %}
+                </table>
+        </div>
+        <form action="/delete" method="post" id="hf">
+                <input type="submit" value="Delete historic" id="h">
+        </form>
+        </main>
+        
+        
+{% endblock %}

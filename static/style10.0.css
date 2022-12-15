@@ -1,0 +1,267 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap'); 
+ @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@600&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+body
+{
+    background-image: url("../static/imagens/wallpaper-1080.png");
+    background-attachment: fixed;
+}
+#cont
+{
+    padding: 1.5rem;
+}
+main{
+    padding: 1rem;
+    width: 600px;
+    height: auto;
+    margin: auto;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #36393F;
+    box-shadow: 4px black;
+
+}
+
+h1
+{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding-top: 1rem;
+}
+
+h2
+{
+    font-family: 'Bitter', serif;
+}
+
+p
+{
+    font-family: 'Rubik', 'calibri', sans-serif;
+}
+
+h3
+{
+    font-family: 'Rubik', 'calibri', sans-serif;
+}
+
+input
+{
+    
+    border-radius: 4px;
+    display: grid;
+    color: white;
+    background-color: gray;
+}
+
+
+#bo, #h
+{
+    cursor: pointer;
+    margin-top: 1rem;
+    height: 30px;
+    width: auto;
+    border-radius: 10px;
+}
+
+#bo
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#hf
+{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+ul
+{
+    list-style: none;
+}
+
+li
+{
+    font-family: 'Rubik', 'calibri', sans-serif;
+    font-weight: bold;
+}
+#study
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 450px;
+}
+#basket
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem;
+}
+
+
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+}
+
+header {
+    position: relative;
+    top: 0;
+    height: auto;
+    width: 100%;
+}
+
+
+
+nav::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.nav-container {
+    margin-bottom: 1rem;
+    max-width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #2E6171;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+}
+
+.nav-container ul{ 
+    float: right;
+    height: 100px;
+    line-height: 160px;
+    margin: 0;
+}
+
+.nav-container li {
+    list-style: none;
+    float: left;
+    margin:0 15px;
+}
+
+.nav-container li a:hover {
+    text-decoration: none;
+    color: #666
+}
+
+#logo {
+    padding: 20px;
+    padding-left: 100px;
+    width: 100px;
+    height: 100px;
+    margin-top: 25px;
+}
+
+#table
+{ 
+    display: grid;
+    justify-content: center;
+    grid-column-gap: 10px;
+   
+}
+
+#his{
+    margin-top: 20px;
+    padding-top: 3rem;
+    padding-right: 5rem;
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+.content-table
+{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1rem;
+    min-width: 400px;
+}
+
+.content-table tbody tr
+{
+    border-bottom: 1px solid #dddddd;
+}
+
+tr:nth-child(even)
+{
+    background-color: #ff0000;
+}
+
+.content-table tbody tr:nth-last-of-type
+{
+    border-bottom: 2px solid #1900ff;
+}
+
+#date
+{
+    margin-left: 10px;
+}
+
+
+thead
+{
+    border-radius: 10px;
+    background-color: #2E6171;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+th, td
+{
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Rubik', 'calibri', sans-serif;
+    margin: 10px 10px;
+    padding: 12px 15px;
+}
+
+#left
+{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#right
+{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+tbody tr
+{
+    border-bottom: 1px solid black;
+}
+
+form#fo
+{
+    
+    padding: 1rem;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 100px 80px;
+    grid-template-rows: 20px 20px 20px 20px;
+    grid-row-gap: 7px;
+}
