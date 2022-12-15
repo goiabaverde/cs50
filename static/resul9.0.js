@@ -15,15 +15,12 @@ var d = b**2 - 4*a*c
 d = Math.sqrt(d) //the the squared root
 console.log(d) 
 
-if(c<0)
-{
-var x1 = (-1*b + d)/(2*a)
-var x2 = (-1*b - d)/(2*a)
-}
-else
-{
-var x1 = (-1*b- d)/(2*a)
-var x2 = (-1*b + d)/(2*a)    
+if (c < 0) {
+    var x1 = (-1*b + d)/(2*a)
+    var x2 = (-1*b - d)/(2*a)
+} else {
+    var x1 = (-1*b - d)/(2*a)
+    var x2 = (-1*b + d)/(2*a)    
 }
 console.log(x1)
 console.log(x2)
@@ -54,14 +51,6 @@ console.log(b)
 console.log(c)
 console.log(a + b)
 window.addEventListener('load', results)
-
-//show the expression
-
-//if(a > 0 && b > 0 && c > 0)
-//{
-    
-    
-//}else if()
 
 function calcQuadrant(xv, yv) {
 
@@ -107,16 +96,15 @@ function results() {
 
     } else {
 
+        let X1 = x1.toFixed(2)
+        let X2 = x2.toFixed(2)
+
         if (x1 < x2) {
 
-            let X1 = x1.toFixed(2)
-            let X2 = x2.toFixed(2)
             res.innerHTML=(`x1 é <i><strong>${X1}</strong></i> e x2 é <i><strong>${X2}</strong></i>`) 
 
         } else if (x1 > x2) {
 
-            let X1 = x1.toFixed(2)
-            let X2 = x2.toFixed(2)
             res.innerHTML=(`x1 é <i><strong>${X2}</strong></i> e x2 é <i><strong>${X1}</strong></i>`)
             
         }
