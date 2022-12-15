@@ -92,8 +92,6 @@ function results() {
         
         except.innerHTML = (`There is not a graph for this quadratic equation`)
         res.innerHTML = (`This is a complex root`)
-    
-        return 0;
 
     } else {
 
@@ -110,8 +108,8 @@ function results() {
             
         }
 
+        i.innerHTML = (`<img src="../static/imagens/a ${aSignalLabel}, b ${bSignalLabel}, c ${cSignalLabel}.png" alt="graphic">`)
+    
     }
-
-    i.innerHTML = (`<img src="../static/imagens/a ${aSignalLabel}, b ${bSignalLabel}, c ${cSignalLabel}.png" alt="graphic">`)
 
 }
