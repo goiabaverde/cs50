@@ -77,13 +77,22 @@ function calcQuadrant(xv, yv) {
 
 }
 
+function getSignalLabel(x) {
+
+    return x > 0 ? `positive`: `negative`
+
+}
+
 function results() {
 
-    var quadrant = calcQuadrant(Xv, Yv)
+    let quadrant = calcQuadrant(Xv, Yv)
+    let aSignalLabel = getSignalLabel(a)
+    let bSignalLabel = getSignalLabel(b)
+    let cSignalLabel = getSignalLabel(c)
 
-    sa.innerHTML=(`a is ${a > 0 ? `positive`: `negative`}, the graph has a <strong>concavity ${a > 0 ? `up`: `down`}</strong>`)
-    sb.innerHTML=(`b is ${b > 0 ? `positive`: `negative`} and a is  ${a > 0 ? `positive`: `negative`}, the vertex will be on quadrant ${quadrant} and the graph will cross the y axis <strong>${b > 0 ? `increasing`: `negadecreasingtive`}</strong>`)
-    sc.innerHTML=(`c is ${c > 0 ? `positive`: `negative`}, the graph will cross the y axis <strong>${c > 0 ? `above`: `below`} </strong> the point 0`)
+    sa.innerHTML=(`a is ${aSignalLabel}, the graph has a <strong>concavity ${a > 0 ? `up`: `down`}</strong>`)
+    sb.innerHTML=(`b is ${bSignalLabel} and a is  ${aSignalLabel}, the vertex will be on quadrant ${quadrant} and the graph will cross the y axis <strong>${b > 0 ? `increasing`: `negadecreasingtive`}</strong>`)
+    sc.innerHTML=(`c is ${cSignalLabel}, the graph will cross the y axis <strong>${c > 0 ? `above`: `below`} </strong> the point 0`)
     xv.innerHTML=(`The value of Xv is <strong> ${Xv}</strong>`)
     yv.innerHTML=(`The value of Yv is <strong>${Yv}</strong>`)
     expression.innerHTML = (`Your quadratic function will look like: <i>${a}x² + ${b}x + ${c}</i>`)
