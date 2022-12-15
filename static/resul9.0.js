@@ -98,7 +98,7 @@ function results() {
     expression.innerHTML = (`Your quadratic function will look like: <i>${a}x² + ${b}x + ${c}</i>`)
 
         //result
-    if(isNaN(x1) && isNaN(x2)) {
+    if (isNaN(x1) && isNaN(x2)) {
         
         except.innerHTML = (`There is not a graph for this quadratic equation`)
         res.innerHTML = (`This is a complex root`)
@@ -107,59 +107,22 @@ function results() {
 
     } else {
 
-        if(x1 < x2) {
+        if (x1 < x2) {
+
             let X1 = x1.toFixed(2)
             let X2 = x2.toFixed(2)
             res.innerHTML=(`x1 é <i><strong>${X1}</strong></i> e x2 é <i><strong>${X2}</strong></i>`) 
-        } 
-        else if(x1 > x2) {
+
+        } else if (x1 > x2) {
+
             let X1 = x1.toFixed(2)
             let X2 = x2.toFixed(2)
             res.innerHTML=(`x1 é <i><strong>${X2}</strong></i> e x2 é <i><strong>${X1}</strong></i>`)
             
-        }   
+        }
+
     }
 
-    // a positivo, b positivo c positivo
-    if(a>0 && b>0 && c>0 ) {
-    
-        i.innerHTML = ('<img src="../static/imagens/raiz negatica, a positivo, b positivo, c positivo.png" alt="graphic">')
-
-        // a positivo b negativo c positivo
-    } else if(a>0 && b<0 && c>0) {
-    
-        i.innerHTML = ('<img src="../static/imagens/a positivo, b negativo, c positivo.png" alt="graphic">')
-
-        // a positive, b positive, c negative
-    } else if(a>0 && b > 0 && c < 0) {
-    
-        i.innerHTML = ('<img src="../static/imagens/a positivo, b positivo, c negativo.png" alt="graph">')
-
-        // a positive, b negative, c negative
-    } else if(a>0 && b < 0 && c < 0) {
-    
-        i.innerHTML = ('<img src="../static/imagens/a positivo, b negativo, c negativo.png" alt="graph">')
-
-        // a negative, b positive, c positive
-    } else if(a < 0 && b > 0 && c > 0) {
-    
-        i.innerHTML = ('<img src="../static/imagens/a negativo, b positivo, c positivo.png" alt="graph">')
-
-        // a negative b negative c positive
-    } else if(a < 0 && b < 0 && c > 0) {
-    
-        i.innerHTML = ('<img src="../static/imagens/a negative, b negative, c positive .png" alt="graph">')
-
-        // a negative, b positive, c negative
-    } else if(a < 0 && b > 0 && c < 0) {
-    
-        i.innerHTML = ('<img src="../static/imagens/a negative, b positive, c negative.png" alt="graph">')
-
-        // a negative, b negative, c negative 
-    } else if(a < 0 && b < 0 && c < 0) {
-    
-        i.innerHTML = ('<img src="../static/imagens/a negative, b negative, c negative.png" alt="graph">')
-
-    } 
+    i.innerHTML = (`<img src="../static/imagens/a ${aSignalLabel}, b ${bSignalLabel}, c ${cSignalLabel}.png" alt="graphic">`)
 
 }
